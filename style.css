@@ -1,0 +1,225 @@
+
+*{
+    font-family:微軟正黑體;
+}
+
+body{
+    background-color: white;
+}
+
+#phoneNum, #username, #password, h3, #fullname, #username2, #password2{
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    color: #0099cc;
+}
+
+.ig_image {
+    display: block; /* 讓圖片變成區塊元素 */
+    margin: 0 auto; /* 水平置中 */
+    max-width: 130px; /* 限制最大寬度 */
+}
+
+.centered {
+    display: flex; /* 使用 Flexbox 來排列元素 */
+    justify-content: center; /* 將元素置中 */
+    align-items: center;
+    height: 100%;
+}
+
+.centered h5 {
+    margin: 20px 0; /* 調整左右間距 */
+}
+
+.register_link, .login_link {
+    text-align: center; /* 文字置中 */
+    margin: 20px; /* 距離上下的邊距 */
+    color: #0099cc; /* 文字顏色 */
+    cursor: pointer; /* 讓文字有鼠標偵測效果 */
+}
+
+
+.register_link:hover, .login_link:hover {
+    color: #57b6d0; /* 鼠標懸停時的文字顏色 */
+}
+
+
+#container1, #container2{
+//margin: 50px;
+    padding: 30px;
+    width: 230px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border:solid 1px #ccc;
+
+    /*定位對齊*/
+    position:relative;
+    margin: auto;
+    top: 70px;
+//text-align:center;
+}
+
+#container2{
+    height: 490px;
+}
+
+#container3{
+//margin: 50px;
+    padding: 30px;
+    width: 230px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border:solid 1px #ccc;
+
+    /*定位對齊*/
+    position:relative;
+    margin: 10px auto;
+    top: 70px;
+//text-align:center;
+}
+#container4{
+//margin: 50px;
+    padding: 30px;
+    width: 230px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border:solid 1px #ccc;
+
+    /*定位對齊*/
+    position:relative;
+    margin: 10px auto;
+    top: 70px;
+//text-align:center;
+}
+
+.system_name{
+    /*定位對齊*/
+    position:relative;
+    margin: auto;
+    top: 100px;
+    text-align:center;
+}
+
+.submit{
+    color: white;
+    background: #0099cc;
+    width: 212px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.submit:hover{
+    background: #57b6d0;
+}
+
+
+.or{
+    /*display: block;*/
+    display: flex;
+    margin: 10px 10px 5px;
+}
+
+.class_or {
+    position: relative; /* 相對定位 */
+    width: max-content; /* 讓寬度根據內容大小自動調整 */
+    margin: 0 auto; /* 水平置中 */
+    text-align: center; /* 文字水平置中 */
+}
+
+.line_or {
+    display: inline-block; /* 行內塊元素 */
+    width: 50%; /* 線的長度 */
+    height: 1px; /* 線的高度 */
+    background-color: #a3a2a3; /* 線的顏色 */
+}
+
+.text_or {
+    position: absolute; /* 絕對定位 */
+    top: 50%; /* 文字距離頂部的位置 */
+    left: 50%; /* 文字距離左側的位置 */
+    transform: translate(-50%, -50%); /* 將文字水平垂直置中 */
+    font-weight: 600;
+    font-size: .8125rem;
+    line-height: 1.1538;
+    color: #a3a2a3;
+}
+
+
+.fb{
+    color: #385185;
+    font-weight: 600;
+    font-size: .87rem;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    margin: 12px;
+    cursor: pointer; /* 讓文字有鼠標偵測效果 */
+}
+
+.forget{
+    color: #0099cc; /* 文字顏色 */
+    font-weight: 600;
+    font-size: .77rem;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    margin: 20px 0 0 0;
+    cursor: pointer; /* 讓文字有鼠標偵測效果 */
+}
+
+#grayText{
+    text-align: center;
+    color: #939393;
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+}
+
+#ha{
+    text-align: center;
+    /*font-size: 14px;*/
+    /*font-weight: 600;*/
+    font-size: .8125rem;
+    /*line-height: 1.1538;*/
+    color: #a3a2a3;
+}
+#rick{
+    color: #0099cc; /* 文字顏色 */
+    cursor: pointer; /* 讓文字有鼠標偵測效果 */
+}
+
+#download{
+    text-align: center;
+    font-size: 14px;
+}
+
+.dwn{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    unicode-bidi: isolate;
+}
+.dwn img {
+    height: 42px; /* 設置圖片高度 */
+    width: auto; /* 自動調整高度 */
+    margin: 0 5px; /* 在圖片左右各添加5px的間距 */
+    cursor: pointer;
+}
+
+#meta{
+    text-align: center;
+    color: #a3a2a3;
+    font-size: 14px;
+}
+
+input{
+    padding: 5px;
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+}
