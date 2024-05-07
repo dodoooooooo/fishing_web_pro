@@ -149,6 +149,33 @@ body{
     line-height: 1.1538;
     color: #a3a2a3;
 }
+/*.or{*/
+/*    display: block;*/
+/*    !*display: flex;*!*/
+/*    margin: 10px 10px 5px;*/
+/*}*/
+
+/*.class_or{ !*或 最外框*!*/
+/*    display: flex;*/
+
+/*}*/
+
+/*.line_or{*/
+/*    top: .45em;*/
+/*    height: 1px;*/
+/*    position: relative;*/
+/*    flex-grow: 1;*/
+/*    background-color: #a3a2a3;*/
+/*}*/
+
+/*.text_or{*/
+/*    margin-right: 18px;*/
+/*    margin-left: 18px; !*或 旁邊空白*!*/
+/*    font-weight: 600;*/
+/*    font-size: .8125rem;*/
+/*    line-height: 1.1538;*/
+/*    color: #a3a2a3;*/
+/*}*/
 
 
 .fb{
