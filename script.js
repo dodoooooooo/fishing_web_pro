@@ -82,6 +82,9 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     localStorage.setItem(username, JSON.stringify(user));
     alert('註冊成功');
     console.log('註冊成功');
+
+    // 清空表單
+    document.getElementById('registerForm').reset();
 });
 
 document.getElementById('loginForm').addEventListener('submit', function(e) {
