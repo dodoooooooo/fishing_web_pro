@@ -1,11 +1,10 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入 • Instagram</title>
-    <link rel="icon" href="Instagram_icon.png.webp" type="image/png">
+    <link rel="icon" href="imgs/Instagram_icon.png.webp" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -14,15 +13,12 @@
 
 <div class="login_page">
     <div id="container1">
-
         <div class="login">
-
-            <img src="ig_logo.png" alt="登入" class="ig_image">
-
-            <form action="用戶管理.php">
-                <input type="text" id="username" name="username" placeholder="手機號碼、用戶名稱或電子郵件" required>
+            <img src="imgs/ig_logo.png" alt="登入" class="ig_image">
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="手機號碼、用戶名稱或電子郵件" required>
                 <div class="tab"></div>
-                <input type="text" id="password" name="password" placeholder="密碼" required>
+                <input type="password" id="loginPassword" placeholder="密碼" required>
                 <div class="tab"></div>
                 <input type="submit" value="登入" class="submit">
                 <div class="or">
@@ -32,80 +28,62 @@
                     </div>
                 </div>
                 <span onclick="toFB()" class="fb">使用 Facebook 帳號登入</span>
-
                 <span onclick="fgtPW()" class="forget">忘記密碼？</span>
-
-
             </form>
-
-        </div><!-- login end-->
-    </div><!-- container1 end-->
+        </div>
+    </div>
     <div id="container3">
         <div class="centered">
             <h5>沒有帳號嗎？</h5>
             <h5 onclick="show_hide()" class="register_link">註冊</h5>
         </div>
     </div>
-</div><!-- login_page end-->
+</div>
 
 <div class="signup_page">
     <div id="container2">
-
         <div class="signup">
-
-            <img src="ig_logo.png" alt="註冊" class="ig_image">
-
+            <img src="imgs/ig_logo.png" alt="註冊" class="ig_image">
             <h5 id="grayText">註冊即可查看朋友的相片和影片。</h5>
-            <input type="submit" value="使用 Facebook 帳號登入" class="submit"
-                   onclick="toFB()">
-
+            <input type="submit" value="使用 Facebook 帳號登入" class="submit" onclick="toFB()">
             <div class="or">
                 <div class="class_or">
                     <div class="line_or"></div>
                     <div class="text_or">或</div>
                 </div>
             </div>
-
-            <form action="用戶管理.php">
-                <input type="text" id="phoneNum" name="phoneNum" placeholder="手機號碼或電子郵件" required>
+            <form id="registerForm">
+                <input type="text" id="registerEmail" placeholder="手機號碼或電子郵件" required>
                 <div class="tab"></div>
-                <input type="text" id="fullname" name="fullname" placeholder="全名" required>
+                <input type="text" id="registerFullname" placeholder="全名" required>
                 <div class="tab"></div>
-                <input type="text" id="username2" name="username" placeholder="用戶名稱" required>
+                <input type="text" id="registerUsername" placeholder="用戶名稱" required>
                 <div class="tab"></div>
-                <input type="text" id="password2" name="password" placeholder="密碼" required>
+                <input type="password" id="registerPassword" placeholder="密碼" required>
                 <div class="tab"></div>
                 <input type="submit" value="註冊" class="submit">
-
                 <h5 id="ha">使用我們服務的用戶可能上傳了你的聯絡資料到我家！
-                <span onclick="haha()" id="rick" >瞭解詳情</span></h5>
-
+                    <span onclick="haha()" id="rick">瞭解詳情</span></h5>
             </form>
-
-
-        </div><!-- signup end-->
-    </div><!-- container2 end-->
+        </div>
+    </div>
     <div id="container4">
         <div class="centered">
             <h5>已經有帳號嗎？</h5>
             <h5 onclick="show_hide()" class="login_link">登入</h5>
         </div>
     </div>
-</div><!-- signup_page end-->
+</div>
 <div id="download" style="margin: 90px 0 0;">
     <h4>下載應用程式。</h4>
 </div>
-
 <div class="dwn">
-    <a href="https://apps.apple.com/us/app/instagram/id389801252"><img src="appStore.png" alt="First Image"></a>
-    <span onclick="toGglPly()"><img src="googlePlay.png" alt="Second Image"></span>
+    <a href="https://apps.apple.com/us/app/instagram/id389801252"><img src="imgs/appStore.png" alt="First Image"></a>
+    <span onclick="toGglPly()"><img src="imgs/googlePlay.png" alt="Second Image"></span>
 </div>
-
-
 <div id="meta" style="margin: 90px 0 0;">
-    <h4>© 2024Instagram from Meta</h4><!--因為js，會跑版-->
+    <h4>© 2024 Instagram from Meta</h4>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
