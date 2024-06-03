@@ -149,6 +149,18 @@ body{
     line-height: 1.1538;
     color: #a3a2a3;
 }
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #0099cc; /* 設置按鈕文字顏色為藍色 */
+}
+
 /*.or{*/
 /*    display: block;*/
 /*    !*display: flex;*!*/

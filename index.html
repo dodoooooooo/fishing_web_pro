@@ -6,6 +6,23 @@
     <title>登入 • Instagram</title>
     <link rel="icon" href="imgs/Instagram_icon.png.webp" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .password-wrapper {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .toggle-password:focus {
+            outline: none;
+        }
+    </style>
 </head>
 <body>
 <div class="system_name">
@@ -18,7 +35,10 @@
             <form id="loginForm">
                 <input type="text" id="loginUsername" placeholder="手機號碼、用戶名稱或電子郵件" required>
                 <div class="tab"></div>
-                <input type="password" id="loginPassword" placeholder="密碼" required>
+                <div class="password-wrapper">
+                    <input type="password" id="loginPassword" placeholder="密碼" required>
+                    <button type="button" class="toggle-password" onclick="togglePasswordVisibility('loginPassword')">顯示</button>
+                </div>
                 <div class="tab"></div>
                 <input type="submit" value="登入" class="submit">
                 <div class="or">
@@ -59,7 +79,10 @@
                 <div class="tab"></div>
                 <input type="text" id="registerUsername" placeholder="用戶名稱" required>
                 <div class="tab"></div>
-                <input type="password" id="registerPassword" placeholder="密碼" required>
+                <div class="password-wrapper">
+                    <input type="password" id="registerPassword" placeholder="密碼" required>
+                    <button type="button" class="toggle-password" onclick="togglePasswordVisibility('registerPassword')">顯示</button>
+                </div>
                 <div class="tab"></div>
                 <input type="submit" value="註冊" class="submit">
                 <h5 id="ha">使用我們服務的用戶可能上傳了你的聯絡資料到我家！

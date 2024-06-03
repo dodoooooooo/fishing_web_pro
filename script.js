@@ -82,9 +82,6 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     localStorage.setItem(username, JSON.stringify(user));
     alert('註冊成功');
     console.log('註冊成功');
-
-    // 清空表單
-    document.getElementById('registerForm').reset();
 });
 
 document.getElementById('loginForm').addEventListener('submit', function(e) {
@@ -107,3 +104,50 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         alert('用戶不存在');
     }
 });
+
+function togglePasswordVisibility(passwordFieldId) {
+    const passwordField = document.getElementById(passwordFieldId);
+    const toggleBtn = passwordField.nextElementSibling;
+    if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        toggleBtn.textContent = '隱藏';
+    } else {
+        passwordField.type = 'password';
+        toggleBtn.textContent = '顯示';
+    }
+}
+
+function toFB() {
+    window.location.href = "https://www.facebook.com/?locale=zh_TW";
+}
+
+function fgtPW() {
+    window.location.href = "https://i.instagram.com/accounts/password/reset/?hl=zh-tw";
+}
+
+function toGglPly() {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D8A753279-7AA3-43AF-B9EA-BFFDEF867E18%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps://www.google.com/&pli=1";
+}
+
+function haha() {
+    window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=btnqhyaV-VpF9RRP";
+}
+
+function show_hide() {
+    const login = document.getElementById("container1");
+    const signup = document.getElementById("container2");
+    const container3 = document.getElementById("container3");
+    const container4 = document.getElementById("container4");
+
+    if (login.style.display === "none") {
+        login.style.display = "block";
+        container3.style.display = "block";
+        signup.style.display = "none";
+        container4.style.display = "none";
+    } else {
+        login.style.display = "none";
+        container3.style.display = "none";
+        signup.style.display = "block";
+        container4.style.display = "block";
+    }
+}
